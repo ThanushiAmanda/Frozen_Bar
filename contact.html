@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <title>FROZEN Bar (Contact us)</title>
+    <link rel="icon" type="img/png" href="images/lce.png" />
+
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <nav>
+      <img src="images/logo.png" class="logo" />
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="price.html">Flavours</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <!-- contact section starts  -->
+    <section class="contact" id="contact">
+      <h1 class="heading"><span> contact </span> us</h1>
+    </section>
+    <!-- contact section ends -->
+
+    <!--start body editing-->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <form action="">
+            <input type="text" placeholder="name" class="box" />
+            <input type="email" placeholder="email" class="box" />
+            <input type="number" placeholder="number" class="box" />
+            <textarea
+              name=""
+              class="box"
+              placeholder="message"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input type="submit" value="send message" class="btn" />
+          </form>
+        </div>
+
+        <div class="col">
+          <div class="card card1">
+            <h5>Dessert</h5>
+            <p>Vanila Ice cream</p>
+          </div>
+          <div class="card card2">
+            <h5>Dessert</h5>
+            <p>Blue berry Ice cream</p>
+          </div>
+          <div class="card card3">
+            <h5>Dessert</h5>
+            <p>coffee Ice cream</p>
+          </div>
+          <div class="card card4">
+            <h5>dessert</h5>
+            <p>Mint Ice cream</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--stop body editing-->
+
+    <!-- footer section starts  -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="home.html">home</a>
+          <a href="about.html">about us</a>
+          <a href="price.html">Flavours</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="login.html">Login</a>
+        </div>
+
+        <div class="box">
+          <h3>extra links</h3>
+          <a href="#">my account</a>
+          <a href="#">my order</a>
+          <a href="#">my favourite</a>
+        </div>
+
+        <div class="box">
+          <h3>locations</h3>
+          <a href="#">kurunegala</a>
+          <a href="#">colombo</a>
+          <a href="#">kandy</a>
+          <a href="#">galle</a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#">071-5523698 / 011-3369854</a>
+          <a href="#">frozenbar@gmail.com</a>
+          <a href="#">NO.30, Kurunegala, Sri Lanka</a>
+          <img src="images/payment.png" alt="" />
+        </div>
+      </div>
+
+      <div class="credit">
+        <img src="images/logo.png" class="logo" />
+        created by <span> FROZEN Bar | ICE-cream </span> | all rights reserved
+      </div>
+    </section>
+    <!-- footer section ends -->
+
+    <!-- start javascript codes for nav bar-->
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("sticky", window.scrollY);
+      });
+    </script>
+  </body>
+</html>

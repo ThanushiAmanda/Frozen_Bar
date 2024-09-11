@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>FROZEN Bar (About us)</title>
+    <link rel="icon" type="img/png" href="images/lce.png" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!--start nav bar-->
+    <nav>
+      <img src="images/logo.png" class="logo" />
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="price.html">Flavours</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <!--stop nav bar-->
+
+    <!--start body editing-->
+    <section class="about" id="about">
+      <h1 class="heading"><span> about </span> us</h1>
+
+      <div class="row">
+        <div class="video-container">
+          <video src="images/koreaice.mp4" loop autoplay muted></video>
+          <h3>best ice-cream sellers</h3>
+        </div>
+
+        <div class="content">
+          <h3>why choose us?</h3>
+          <p>
+            We’ve been making irresistible, award-winning ice cream for over 60
+            years, so we think we’re pretty good at it. But you should try for
+            yourself — tasting is believing! We think ice cream should be
+            enjoyed whatever the weather so we’re open all year round.
+          </p>
+          <p>
+            Whether you want something devilishly delicious at Halloween or a
+            sundae on a summer day come and visit us!
+          </p>
+          <a href="#" class="btn">learn more</a>
+        </div>
+      </div>
+    </section>
+    <!--stop body editing-->
+
+    <!-- icons section starts  -->
+    <section class="icons-container">
+      <div class="icons">
+        <img src="images/icon-1.png" alt="" />
+        <div class="info">
+          <h3>free delivery</h3>
+          <span>on all orders</span>
+        </div>
+      </div>
+
+      <div class="icons">
+        <img src="images/icon-3.png" alt="" />
+        <div class="info">
+          <h3>offer & gifts</h3>
+          <span>on all orders</span>
+        </div>
+      </div>
+
+      <div class="icons">
+        <img src="images/icon-4.png" alt="" />
+        <div class="info">
+          <h3>secure paymens</h3>
+          <span>protected by paypal</span>
+        </div>
+      </div>
+    </section>
+    <!-- icons section ends -->
+
+    <!-- footer section starts  -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="home.html">home</a>
+          <a href="about.html">about us</a>
+          <a href="price.html">flavours</a>
+          <a href="contact.html">contact us</a>
+          <a href="login.html">login</a>
+        </div>
+
+        <div class="box">
+          <h3>extra links</h3>
+          <a href="#">my account</a>
+          <a href="#">my order</a>
+          <a href="#">my favorite</a>
+        </div>
+
+        <div class="box">
+          <h3>locations</h3>
+          <a href="#">kurunegala</a>
+          <a href="#">colombo</a>
+          <a href="#">kandy</a>
+          <a href="#">galle</a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#">071-5523698 / 011-3369854</a>
+          <a href="#">frozenbar@gmail.com</a>
+          <a href="#">NO.30, Kurunegala, Sri Lanka</a>
+          <img src="images/payment.png" alt="" />
+        </div>
+      </div>
+
+      <div class="credit">
+        <img src="images/logo.png" class="logo" />
+        created by <span> FROZEN Bar | ICE-cream </span> | all rights reserved
+      </div>
+    </section>
+    <!-- footer section ends -->
+
+    <!--javascript code for nav bar-->
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("sticky", window.scrollY);
+      });
+    </script>
+  </body>
+</html>

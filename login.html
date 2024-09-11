@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <title>FROZEN Bar (Login)</title>
+    <meta charset="utf-8" />
+    
+    <link
+      rel="icon"
+      type="img/png"
+      href="images/lce.png"
+    />
+    <link rel="stylesheet" href="css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <nav>
+      <img src="images/logo.png" class="logo" />
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="price.html">Flavours</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <!-- contact section starts  -->
+    <section class="contact" id="contact">
+      <h1 class="heading"><span> Login </span></h1>
+    </section>
+    <!-- contact section ends -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".login").hide();
+        $(".register_li").addClass("active");
+
+        $(".login_li").click(function () {
+          $(this).addClass("active");
+          $(".register_li").removeClass("active");
+          $(".login").show();
+          $(".register").hide();
+        });
+
+        $(".register_li").click(function () {
+          $(this).addClass("active");
+          $(".login_li").removeClass("active");
+          $(".register").show();
+          $(".login").hide();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="left">
+        <h3 class="frozen">FROZEN</h3>
+        <h3 class="bar">Bar</h3>
+
+        <img src="images/logo.png" alt="Rocket_image" />
+      </div>
+      <div class="right">
+        <div class="tabs">
+          <ul>
+            <li class="register_li">Register</li>
+            <li class="login_li">login</li>
+          </ul>
+        </div>
+
+        <div class="register">
+          <div class="input_field">
+            <input type="text" placeholder="Username" class="input" />
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="E-mail" class="input" />
+          </div>
+          <div class="input_field">
+            <input type="password" placeholder="Password" class="input" />
+          </div>
+          <div class="btn"><a href="#">Register</a></div>
+        </div>
+
+        <div class="login">
+          <div class="input_field">
+            <input type="text" placeholder="E-mail" class="input" />
+          </div>
+          <div class="input_field">
+            <input type="password" placeholder="Password" class="input" />
+          </div>
+          <div class="btn"><a href="#">Login</a></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- footer section starts  -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="home.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="price.html">Flavours</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="login.html">Login</a>
+        </div>
+
+        <div class="box">
+          <h3>extra links</h3>
+          <a href="#">my account</a>
+          <a href="#">my order</a>
+          <a href="#">my favourite</a>
+        </div>
+
+  
+        <div class="box">
+          <h3>locations</h3>
+          <a href="#">kurunegala</a>
+          <a href="#">colombo</a>
+          <a href="#">kandy</a>
+          <a href="#">galle</a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#">071-5523698 / 011-3369854</a>
+          <a href="#">frozenbar@gmail.com</a>
+          <a href="#">NO.30, Kurunegala, Sri Lanka</a>
+          <img src="images/payment.png" alt="" />
+        </div>
+      </div>
+
+      <div class="credit">
+        <img src="images/logo.png" class="logo" />
+        created by <span> FROZEN Bar | ICE-cream </span> | all rights reserved
+      </div>
+    </section>
+    <!-- footer section ends -->
+
+    <!-- javascript codes for nav bar-->
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("sticky", window.scrollY);
+      });
+    </script>
+
+  </body>
+</html>
